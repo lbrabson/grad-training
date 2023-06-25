@@ -1,4 +1,4 @@
-# dft-training
+# grad-training
 
 This repository has training material for new graduate students on Georgia Tech's high-performance computing platform, PACE. The training material convers basics of Python and the Linux operating system, basic density functional theory (DFT) topics in Quantum Espresso and SPARC, and useful machine learning (ML) techniques. It also introduces the Atomic Simulation Environment (ASE) that can be used to build molecules, bulk crystals, slabs and nanoparticles and ASE calculators that are required to calculate energetics of chemical systems. <br>
 <br>
