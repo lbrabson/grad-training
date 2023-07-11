@@ -1,2 +1,0 @@
-We start with the simple example of an isolated atom. Place a single carbon atom in a cubic box with dimension L. Compute the energy of the system for values of L in the interval 2—14 Å with a 1 Å increment.
-Determine the minimal dimension of the box you recommend for the study by plotting system energy against L in Python.
