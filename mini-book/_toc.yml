@@ -1,0 +1,26 @@
+format: jb-book
+root: docs/index
+options:
+  numbered: true
+chapters:
+- file: docs/Intro_to_Computational_Tools
+  sections:
+  - file: docs/Python_Basics
+  - file: docs/Intro_to_ASE_Building_Structures
+  - file: docs/Intro_to_ASE_Calculators
+  - file: docs/Intro_to_Linux
+- file: docs/Intro_to_Density_Functional_Theory
+- file: docs/Applications_of_Density_Functional_Theory
+  sections:
+  - file: docs/Running_DFT_on_PACE
+  - file: docs/Running_SPARC
+  - file: docs/Adsorption_Energy
+  - file: docs/Convergence_of_Computational_Parameters
+  - file: docs/Referencing_Binding_Energies
+- file: docs/Machine_Learning_Concepts_and_Tools
+  sections:
+  - file: docs/Introduction_to_Neural_Network_Potentials
+  - file: docs/Training_Neural_Network_Potentials_with_JAX
+- file: docs/Appendix
+  sections:
+  - file: docs/Create_DFT_Environments

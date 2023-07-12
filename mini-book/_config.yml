@@ -1,0 +1,7 @@
+title: Medford Group Graduate Training
+author: Medford Group
+logo: logo.png
+execute:
+  execute_notebooks: 'off'
+bibtex_bibfiles:
+  - references.bib

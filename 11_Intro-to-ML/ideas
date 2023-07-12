@@ -1,8 +1,0 @@
-Basic regression and classification, sklearn, lin alg resources
-I'd recommend stealing/borrowing/modifying some parts of the exercises/lectures from the ChBE6745 course
-
-I think it may also make sense to tailor the exercises/examples to what is currently done in the group. I.e.,
-regressing "formation" energies, KINNs (with a basic example from Dingqi/Gabriel), and on-the-fly. I'm (LRT)
-still doing some work with AMPTorch as is Nicole I believe, but I'm not sure how much of a focus that will be
-in the future in terms of ML development or incorporating into workflows. Thus, I'd reframe this section and the
-final two to be more focused on KINNs, on-the-fly, and practical ML that we all use day-to-day.
