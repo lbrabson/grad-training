@@ -5,22 +5,39 @@ options:
 chapters:
 - file: docs/Intro_to_Computational_Tools
   sections:
-  - file: docs/Python_Basics
+  - file: docs/Introduction_to_Python_programming
+  - file: docs/Introduction_to_numpy
+  - file: docs/Introduction_to_scipy
+  - file: docs/Introduction_to_plotting_in_Python
+  - file: docs/Exercises_python
   - file: docs/Intro_to_ASE_Building_Structures
+  - file: docs/Exercises_ASE_intro
   - file: docs/Intro_to_ASE_Calculators
+  - file: docs/Exercises_ASE_calcs
   - file: docs/Intro_to_Linux
+  - file: docs/Exercises_linux
 - file: docs/Intro_to_Density_Functional_Theory
 - file: docs/Applications_of_Density_Functional_Theory
   sections:
-  - file: docs/Running_DFT_on_PACE
-  - file: docs/Running_SPARC
-  - file: docs/Adsorption_Energy
+  - file: docs/Running_QE_on_PACE
+  - file: docs/Running_SPARC_on_PACE
+  - file: docs/Exercises_DFT_basics
+  - file: docs/Adsorption_energy_calculation_in_QE
+  - file: docs/Adsorption_energy_calculation_in_SPARC
+  - file: docs/Exercises_DFT_applications
   - file: docs/Convergence_of_Computational_Parameters
-  - file: docs/Referencing_Binding_Energies
+  - file: docs/Exercises_convergence
 - file: docs/Machine_Learning_Concepts_and_Tools
   sections:
-  - file: docs/Introduction_to_Neural_Network_Potentials
+  - file: docs/Introduction_to_Machine_Learning
+  - file: docs/Exercises_ML_basics_Pt1
+  - file: docs/Machine_Learning_Continued
+  - file: docs/Exercises_ML_basics_Pt2
+  - file: docs/Introduction_to_ML_Potentials
   - file: docs/Training_Neural_Network_Potentials_with_JAX
 - file: docs/Appendix
   sections:
   - file: docs/Create_DFT_Environments
+  - file: docs/Gas_formation_energy_calculation_in_SPARC
+  - file: docs/Referencing_Binding_Energies
+
