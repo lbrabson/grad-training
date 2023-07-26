@@ -1,0 +1,137 @@
+***************************************************************************
+*                       SPARC (version Jul 10, 2023)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Tue Jul 25 00:49:01 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 1 1 1 
+LATVEC:
+0 3.41096 3.41096 
+3.41096 0 3.41096 
+3.41096 3.41096 0 
+FD_GRID: 13 13 13
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 6 6 1
+KPOINT_SHIFT: 0.5 0.5 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.007349864435
+EXCHANGE_CORRELATION: GGA_PBE
+NSTATES: 15
+CHEB_DEGREE: 25
+CHEFSI_BOUND_FLAG: 0
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+MINIT_SCF: 2
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-08
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 1.38E-04
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+PRINT_ENERGY_DENSITY: 0
+D3_FLAG: 1
+D3_RTHR: 1600
+D3_CN_THR: 625
+OUTPUT_FILE: SPARC
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors (Bohr):
+0.000000000000000 3.410960000000000 3.410960000000000 
+3.410960000000000 0.000000000000000 3.410960000000000 
+3.410960000000000 3.410960000000000 0.000000000000000 
+Volume: 7.9370638714E+01 (Bohr^3)
+Density: 8.0062351809E-01 (amu/Bohr^3), 8.9716855148E+00 (g/cc)
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 6
+NP_BAND_PARAL: 1
+NP_DOMAIN_PARAL: 1 2 2
+NP_DOMAIN_PHI_PARAL: 2 2 2
+EIG_SERIAL_MAXNS: 1500
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  24
+Mesh spacing                       :  0.371064 (Bohr)
+Number of symmetry adapted k-points:  18
+Output printed to                  :  SPARC.out
+Total number of atom types         :  1
+Total number of atoms              :  1
+Total number of electrons          :  19
+Atom type 1  (valence electrons)   :  Cu 19
+Pseudopotential                    :  29_Cu_19_1.7_1.9_pbe_n_v1.0.psp8
+Atomic mass                        :  63.546
+Pseudocharge radii of atom type 1  :  8.91 8.91 8.91 (x, y, z dir)
+Number of atoms of type 1          :  1
+Estimated total memory usage       :  18.79 MB
+Estimated memory per processor     :  801.81 kB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -1.8251527830E+02        7.610E-02        0.727
+2            -1.8245033216E+02        2.086E-02        0.181
+3            -1.8244708316E+02        1.056E-02        0.182
+4            -1.8244671422E+02        3.259E-03        0.181
+5            -1.8244668739E+02        1.897E-03        0.182
+6            -1.8244668884E+02        3.405E-04        0.181
+7            -1.8244669003E+02        2.831E-04        0.181
+8            -1.8244668964E+02        6.493E-05        0.180
+9            -1.8244668967E+02        1.491E-05        0.180
+10           -1.8244668972E+02        1.280E-05        0.180
+11           -1.8244668966E+02        5.761E-07        0.179
+Total number of SCF: 11    
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -1.8246262733E+02 (Ha/atom)
+Total free energy                  : -1.8246262733E+02 (Ha)
+Band structure energy              : -2.0549917821E+01 (Ha)
+Exchange correlation energy        : -2.1604082057E+01 (Ha)
+Self and correction energy         : -1.8654924363E+02 (Ha)
+-Entropy*kb*T                      : -1.2244491077E-03 (Ha)
+Fermi level                        :  2.0827441338E-01 (Ha)
+DFT-D3 correction                  : -1.5937666654E-02 (Ha)
+RMS force                          :  0.0000000000E+00 (Ha/Bohr)
+Maximum force                      :  0.0000000000E+00 (Ha/Bohr)
+Time for force calculation         :  0.032 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  2.693 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*               List of contributors: See the documentation               *
+*         Citation: See README.md or the documentation for details        *
+*  Acknowledgements: U.S. DOE SC (DE-SC0019410), U.S. DOE NNSA (ASC)      *
+*      {Preliminary developments: U.S. NSF (1333500,1663244,1553212)}     *
+***************************************************************************
+                                                                           

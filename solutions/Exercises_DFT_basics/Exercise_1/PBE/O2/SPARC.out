@@ -1,0 +1,269 @@
+***************************************************************************
+*                       SPARC (version Jul 10, 2023)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Mon Jul 24 16:45:23 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 1 1 1 
+LATVEC:
+18.8973 0 0 
+0 18.8973 0 
+0 0 18.8973 
+FD_GRID: 67 67 67
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 1
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.007349864435
+EXCHANGE_CORRELATION: GGA_PBE
+NSTATES: 12
+CHEB_DEGREE: 27
+CHEFSI_BOUND_FLAG: 0
+RELAX_FLAG: 1
+RELAX_METHOD: LBFGS
+RELAX_NITER: 300
+L_HISTORY: 20
+L_FINIT_STP: 0.005
+L_MAXMOV: 0.2
+L_AUTOSCALE: 1
+L_LINEOPT: 1
+L_ICURV: 1
+CALC_STRESS: 0
+CALC_PRES: 0
+TWTIME: 1E+09
+MAXIT_SCF: 100
+MINIT_SCF: 2
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+MIXING_PRECOND_MAG: none
+TOL_PRECOND: 7.96E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_PARAMETER_MAG: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+PRINT_VELS: 1
+PRINT_RESTART: 1
+PRINT_RESTART_FQ: 1
+PRINT_ENERGY_DENSITY: 0
+TOL_RELAX: 5.00E-04
+PRINT_RELAXOUT: 1
+D3_FLAG: 1
+D3_RTHR: 1600
+D3_CN_THR: 625
+OUTPUT_FILE: SPARC
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors (Bohr):
+18.897300000000001 0.000000000000000 0.000000000000000 
+0.000000000000000 18.897300000000001 0.000000000000000 
+0.000000000000000 0.000000000000000 18.897300000000001 
+Volume: 6.7483760123E+03 (Bohr^3)
+Density: 4.7417037731E-03 (amu/Bohr^3), 5.3134930583E-02 (g/cc)
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 2
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 12
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 2 3 4
+EIG_SERIAL_MAXNS: 1500
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  24
+Mesh spacing                       :  0.282049 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  SPARC.out
+Relax output printed to            :  SPARC.geopt
+Total number of atom types         :  1
+Total number of atoms              :  2
+Total number of electrons          :  12
+Atom type 1  (valence electrons)   :  O 6
+Pseudopotential                    :  08_O_6_1.2_1.4_pbe_n_v1.0.psp8
+Atomic mass                        :  15.9994
+Pseudocharge radii of atom type 1  :  7.05 7.05 7.05 (x, y, z dir)
+Number of atoms of type 1          :  2
+Estimated total memory usage       :  525.02 MB
+Estimated memory per processor     :  21.88 MB
+========================================================================================
+                    Self Consistent Field (SCF#1)                     
+========================================================================================
+Iteration     Free Energy (Ha/atom)    Magnetization     SCF Error        Timing (sec)
+1            -1.6388747300E+01         2.0000E+00        2.842E-01        0.853
+2            -1.6418033952E+01         2.0000E+00        2.351E-01        0.297
+3            -1.6445601616E+01         2.0000E+00        1.828E-01        0.298
+4            -1.6460369983E+01         2.0000E+00        6.174E-02        0.299
+5            -1.6462644362E+01         2.0000E+00        4.308E-02        0.295
+6            -1.6458170504E+01         2.0000E+00        1.270E-02        0.288
+7            -1.6456814974E+01         2.0000E+00        1.599E-02        0.288
+8            -1.6456781368E+01         2.0000E+00        6.457E-03        0.297
+9            -1.6456233094E+01         2.0000E+00        6.979E-03        0.285
+10           -1.6456136298E+01         2.0000E+00        4.497E-03        0.291
+11           -1.6456405071E+01         2.0000E+00        3.392E-03        0.272
+12           -1.6456514382E+01         2.0000E+00        2.141E-03        0.274
+13           -1.6456714019E+01         2.0000E+00        1.136E-03        0.269
+14           -1.6456826430E+01         2.0000E+00        3.928E-04        0.261
+15           -1.6456854371E+01         2.0000E+00        2.357E-04        0.263
+16           -1.6456884045E+01         2.0000E+00        1.743E-04        0.256
+17           -1.6456892642E+01         2.0000E+00        1.455E-04        0.245
+18           -1.6456894118E+01         2.0000E+00        2.191E-04        0.249
+19           -1.6456891284E+01         2.0000E+00        1.421E-04        0.236
+20           -1.6456892450E+01         2.0000E+00        1.054E-04        0.249
+21           -1.6456897745E+01         2.0000E+00        5.352E-05        0.239
+Total number of SCF: 21    
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -1.6456900463E+01 (Ha/atom)
+Total free energy                  : -3.2913800926E+01 (Ha)
+Band structure energy              : -7.0142488058E+00 (Ha)
+Exchange correlation energy        : -8.1239791382E+00 (Ha)
+Self and correction energy         : -4.8020986450E+01 (Ha)
+-Entropy*kb*T                      : -2.4938420436E-10 (Ha)
+Fermi level                        : -1.9874363641E-01 (Ha)
+DFT-D3 correction                  : -5.4357408362E-06 (Ha)
+RMS force                          :  3.1725904243E-02 (Ha/Bohr)
+Maximum force                      :  3.1725904243E-02 (Ha/Bohr)
+Time for force calculation         :  0.013 (sec)
+Relax step time                    :  6.534 (sec)
+========================================================================================
+                    Self Consistent Field (SCF#2)                     
+========================================================================================
+Iteration     Free Energy (Ha/atom)    Magnetization     SCF Error        Timing (sec)
+1            -1.6457105151E+01         2.0000E+00        7.022E-03        0.278
+2            -1.6457044584E+01         2.0000E+00        4.288E-03        0.262
+3            -1.6457005168E+01         2.0000E+00        8.833E-04        0.257
+4            -1.6457004014E+01         2.0000E+00        1.893E-04        0.251
+5            -1.6457003603E+01         2.0000E+00        1.117E-04        0.249
+6            -1.6457003934E+01         2.0000E+00        6.053E-05        0.254
+Total number of SCF: 6     
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -1.6457006644E+01 (Ha/atom)
+Total free energy                  : -3.2914013289E+01 (Ha)
+Band structure energy              : -7.0232543284E+00 (Ha)
+Exchange correlation energy        : -8.1269603734E+00 (Ha)
+Self and correction energy         : -4.8020913662E+01 (Ha)
+-Entropy*kb*T                      : -1.2501732555E-10 (Ha)
+Fermi level                        : -2.2692375045E-01 (Ha)
+DFT-D3 correction                  : -5.4205750189E-06 (Ha)
+RMS force                          :  2.8143202508E-02 (Ha/Bohr)
+Maximum force                      :  2.8143202508E-02 (Ha/Bohr)
+Time for force calculation         :  0.013 (sec)
+Relax step time                    :  1.659 (sec)
+========================================================================================
+                    Self Consistent Field (SCF#3)                     
+========================================================================================
+Iteration     Free Energy (Ha/atom)    Magnetization     SCF Error        Timing (sec)
+1            -1.6458886203E+01         2.0000E+00        2.742E-02        0.293
+2            -1.6457952855E+01         2.0000E+00        1.675E-02        0.275
+3            -1.6457336371E+01         2.0000E+00        3.445E-03        0.276
+4            -1.6457319685E+01         2.0000E+00        7.019E-04        0.263
+5            -1.6457318712E+01         2.0000E+00        4.469E-04        0.265
+6            -1.6457319258E+01         2.0000E+00        2.453E-04        0.268
+7            -1.6457323051E+01         2.0000E+00        1.201E-04        0.255
+8            -1.6457325277E+01         2.0000E+00        9.542E-05        0.260
+Total number of SCF: 8     
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -1.6457327959E+01 (Ha/atom)
+Total free energy                  : -3.2914655918E+01 (Ha)
+Band structure energy              : -7.0518655009E+00 (Ha)
+Exchange correlation energy        : -8.1393569816E+00 (Ha)
+Self and correction energy         : -4.8020677252E+01 (Ha)
+-Entropy*kb*T                      : -2.5448860775E-10 (Ha)
+Fermi level                        : -2.2363531505E-01 (Ha)
+DFT-D3 correction                  : -5.3638799233E-06 (Ha)
+RMS force                          :  1.2467740331E-02 (Ha/Bohr)
+Maximum force                      :  1.2467740331E-02 (Ha/Bohr)
+Time for force calculation         :  0.013 (sec)
+Relax step time                    :  2.275 (sec)
+========================================================================================
+                    Self Consistent Field (SCF#4)                     
+========================================================================================
+Iteration     Free Energy (Ha/atom)    Magnetization     SCF Error        Timing (sec)
+1            -1.6457449459E+01         2.0000E+00        3.302E-03        0.307
+2            -1.6457460251E+01         2.0000E+00        2.406E-03        0.265
+3            -1.6457470211E+01         2.0000E+00        3.049E-04        0.253
+4            -1.6457472154E+01         2.0000E+00        1.964E-04        0.259
+5            -1.6457475810E+01         2.0000E+00        1.230E-04        0.261
+6            -1.6457480031E+01         2.0000E+00        7.795E-05        0.254
+Total number of SCF: 6     
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -1.6457482692E+01 (Ha/atom)
+Total free energy                  : -3.2914965383E+01 (Ha)
+Band structure energy              : -7.0738269350E+00 (Ha)
+Exchange correlation energy        : -8.1497864678E+00 (Ha)
+Self and correction energy         : -4.8020553949E+01 (Ha)
+-Entropy*kb*T                      : -2.5048596518E-10 (Ha)
+Fermi level                        : -2.2025793099E-01 (Ha)
+DFT-D3 correction                  : -5.3218956342E-06 (Ha)
+RMS force                          :  9.4377389911E-04 (Ha/Bohr)
+Maximum force                      :  9.4377389911E-04 (Ha/Bohr)
+Time for force calculation         :  0.013 (sec)
+Relax step time                    :  1.705 (sec)
+========================================================================================
+                    Self Consistent Field (SCF#5)                     
+========================================================================================
+Iteration     Free Energy (Ha/atom)    Magnetization     SCF Error        Timing (sec)
+1            -1.6457474339E+01         2.0000E+00        2.319E-04        0.258
+2            -1.6457474642E+01         2.0000E+00        1.706E-04        0.245
+3            -1.6457476919E+01         2.0000E+00        3.124E-05        0.232
+Total number of SCF: 3     
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -1.6457479581E+01 (Ha/atom)
+Total free energy                  : -3.2914959162E+01 (Ha)
+Band structure energy              : -7.0688157486E+00 (Ha)
+Exchange correlation energy        : -8.1492928252E+00 (Ha)
+Self and correction energy         : -4.8020560587E+01 (Ha)
+-Entropy*kb*T                      : -2.5526237953E-10 (Ha)
+Fermi level                        : -2.2023090488E-01 (Ha)
+DFT-D3 correction                  : -5.3247637554E-06 (Ha)
+RMS force                          :  6.4616691871E-05 (Ha/Bohr)
+Maximum force                      :  6.4616691871E-05 (Ha/Bohr)
+Time for force calculation         :  0.013 (sec)
+Relax step time                    :  0.807 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  13.010 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*               List of contributors: See the documentation               *
+*         Citation: See README.md or the documentation for details        *
+*  Acknowledgements: U.S. DOE SC (DE-SC0019410), U.S. DOE NNSA (ASC)      *
+*      {Preliminary developments: U.S. NSF (1333500,1663244,1553212)}     *
+***************************************************************************
+                                                                           

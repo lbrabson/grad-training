@@ -1,0 +1,8 @@
+cp -r ./Storage ./Storage_copied  ## for convenience
+
+cd ./Storage_copied
+echo $PWD
+
+for file in ./*; do
+	rm "$file"
+done

@@ -1,0 +1,21 @@
+---------------------------------------
+Begin Slurm Prolog: Jul-21-2023 17:56:43
+Job ID:    10580
+User ID:   nyu49
+Account:   chbe
+Job name:  Excercises_linux
+Partition: pace-cpu
+---------------------------------------
+Hello world!
+---------------------------------------
+Begin Slurm Epilog: Jul-21-2023 17:56:43
+Job ID:        10580
+Array Job ID:  _4294967294
+User ID:       nyu49
+Account:       chbe
+Job name:      Excercises_linux
+Resources:     cpu=1,mem=4G,node=1
+Rsrc Used:     cput=00:00:07,vmem=12K,walltime=00:00:07,mem=0,energy_used=0
+Partition:     pace-cpu
+Nodes:         atl1-1-02-003-19-1
+---------------------------------------
