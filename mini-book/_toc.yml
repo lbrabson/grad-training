@@ -3,38 +3,52 @@ root: docs/index
 options:
   numbered: true
 chapters:
-- file: docs/Intro_to_Computational_Tools
+- file: docs/Basic_Python_Tools
   sections:
   - file: docs/Introduction_to_Python_programming
   - file: docs/Introduction_to_numpy
   - file: docs/Introduction_to_scipy
   - file: docs/Introduction_to_plotting_in_Python
   - file: docs/Exercises_python
+- file: docs/Manipulating_Atoms_in_Python
+  sections:
   - file: docs/Intro_to_ASE_Building_Structures
-  - file: docs/Exercises_ASE_intro
   - file: docs/Intro_to_ASE_Calculators
+  - file: docs/Exercises_ASE_intro
   - file: docs/Exercises_ASE_calcs
-  - file: docs/Intro_to_Linux
+- file: docs/Intro_to_Linux_HPC
+  sections:
   - file: docs/Exercises_linux
 - file: docs/Intro_to_Density_Functional_Theory
-- file: docs/Applications_of_Density_Functional_Theory
+- file: docs/Running_Density_Functional_Theory_on_PACE
   sections:
   - file: docs/Running_QE_on_PACE
   - file: docs/Running_SPARC_on_PACE
   - file: docs/Exercises_DFT_basics
+- file: docs/Applications_of_Density_Functional_Theory
+  sections:
   - file: docs/Adsorption_energy_calculation_in_QE
   - file: docs/Adsorption_energy_calculation_in_SPARC
   - file: docs/Exercises_DFT_applications
+- file: Nuts_and_Bolts_of_DFT_Calculations
+  sections:
   - file: docs/Convergence_of_Computational_Parameters
   - file: docs/Exercises_convergence
-- file: docs/Machine_Learning_Concepts_and_Tools
+- file: docs/Intro_to_Regression_and_High_Dimensional_Data
   sections:
-  - file: docs/Introduction_to_Machine_Learning
+  - file: docs/ML_1_1_Non-parametric_Models
+  - file: docs/ML_1_2_Complexity_Optimization
+  - file: docs/ML_1_3_High_Dimensional_Data
+  - file: docs/ML_1_4_Dimensionality_Reduction
   - file: docs/Exercises_ML_basics_Pt1
-  - file: docs/Machine_Learning_Continued
+- file: docs/Intro_to_Classification_and_Generative_Models
+  sections:
+  - file: docs/ML_2_1_Classification_Basics
+  - file: docs/ML_2_2_Generalized_Linear_Models
+  - file: docs/ML_2_3_Alternate_Classification_Models
+  - file: docs/ML_2_4_Clustering
+  - file: docs/ML_2_5_Generative_Models
   - file: docs/Exercises_ML_basics_Pt2
-  - file: docs/Introduction_to_ML_Potentials
-  - file: docs/Training_Neural_Network_Potentials_with_JAX
 - file: docs/Appendix
   sections:
   - file: docs/Create_DFT_Environments
